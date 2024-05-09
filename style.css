@@ -19,6 +19,7 @@
 nav.menu ul {
     display: flex;
     list-style: none;
+    margin-left: 75px;
 }
 .menu ul li{
     margin-left: 50px;
@@ -30,16 +31,15 @@ nav.menu ul {
     font-weight: 400;
     text-decoration: none;
 }
-.menu ul li:first-child{
-    margin-left: 150px;
-}
 .menu a:hover{
     color: #7253A4;
     font-weight: 700;
 }
-
+.wrap_btn{
+    width: 376px;
+}
 .wrap_btn .singup{
-    padding: 11.5px 34.5px;
+    padding: 4.1% 12.7%;
     background-color: #ffffff;
 }
 .wrap_btn a {
@@ -54,7 +54,7 @@ nav.menu ul {
 }
 
 .wrap_btn .login {
-    padding: 11.5px 44px;
+    padding: 4.1% 12.7%;
     margin-left: 24px;
 }
 .wrap_btn a:hover{

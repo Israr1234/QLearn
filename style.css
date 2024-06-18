@@ -976,6 +976,7 @@ input[type="text"] {
         font-size: 16px;
         border-radius: 8px 0px 8px 8px;
         padding: 7.5px 24px;
+        max-width: 150px;
     }
 
     .conflex {
@@ -1001,6 +1002,7 @@ input[type="text"] {
         font-size: 15px;
         border-radius: 8px 0px 8px 8px;
         padding: 6.5px 22px;
+        /* max-width: 130px; */
     }
 
     .conflex {
@@ -1008,7 +1010,7 @@ input[type="text"] {
     }
 }
 
-@media (max-width: 780) {
+@media (max-width: 780px) {
     .flex2 {
         padding-bottom: 60px;
     }
@@ -1031,7 +1033,7 @@ input[type="text"] {
      }     */
 }
 
-@media (max-width: 480) {
+@media (max-width: 480px) {
     .flex2 {
         padding-bottom: 50px;
     }
@@ -1047,6 +1049,8 @@ input[type="text"] {
         font-size: 12px;
         border-radius: 6px 0px 6px 6px;
         padding: 4.5px 16px;
+        width: 40%;
+        max-width: 160px;
     }
 
     /* .conflex {
@@ -1515,13 +1519,13 @@ input[type="text"] {
                         border-radius: 16px;
                         }
                     .std_pro h2 {
-                        font-size: 21px;
+                        font-size: 14px;
                         }
                     .std_pro p {
-                        font-size: 16px;
+                        font-size: 9px;
                         }
                     .std_fedback .con_para {
-                        font-size: 19px;
+                        font-size: 12px;
                         margin: 24px 0px;
                     }
                     }
@@ -1776,13 +1780,43 @@ input[type="text"] {
     }
     
     .arrow {
-        max-width: 800px;
+        max-width: 600px;
         margin-top: 80px;
         margin-bottom: 15px;
     }
     
     .cpyright {
      font-size: 13px;
+    }    
+}
+
+@media (max-width: 480px){
+
+    .ft_social p {
+        font-size: 16px;
+        margin: 10px 0px 12px 0px;
+    }
+    .mainft {
+        padding: 40px 0px 25px 0px;
+    }
+    
+    .ft_content h4 {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+    
+    .ft_content ul a {
+        font-size: 13px;
+    }
+    
+    .arrow {
+        max-width: 300px;
+        margin-top: 26px;
+        margin-bottom: 15px;
+    }
+    
+    .cpyright {
+     font-size: 12px;
     }    
 }
 

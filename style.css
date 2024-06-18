@@ -11,6 +11,12 @@
     /* background-color: aquamarine; */
 }
 
+
+/* toggle */
+
+.active.menu{
+    display: block;
+}
 /* header */
 .logo img {
     width: 100%;
@@ -20,7 +26,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     padding: 20px 0px 22px 0px;
 }
 
@@ -52,7 +58,7 @@ nav.menu ul {
 }
 
 .wrap_btn .singup {
-    padding: 4.1% 12.7%;
+    padding: 4.1% 12%;
     background-color: #ffffff;
 }
 
@@ -77,9 +83,9 @@ nav.menu ul {
     color: #ffffff;
 }
 
-.mobile_navbar {
+/* .mobile_navbar {
     display: none;
-}
+} */
 
 /*  Responsive header */
 @media (max-width: 1650px) {
@@ -100,7 +106,7 @@ nav.menu ul {
     }
 
     .wrap_btn .singup {
-        padding: 3.1% 10.7%;
+        padding: 3.1% 9%;
         background-color: #ffffff;
     }
 
@@ -132,7 +138,7 @@ nav.menu ul {
     }
 
     .wrap_btn .singup {
-        padding: 3.1% 10.7%;
+        padding: 3.1% 7%;
         background-color: #ffffff;
     }
 
@@ -164,7 +170,7 @@ nav.menu ul {
     }
 
     .wrap_btn .singup {
-        padding: 2.6% 7.7%;
+        padding: 2.6% 5.7%;
         background-color: #ffffff;
     }
 
@@ -196,7 +202,7 @@ nav.menu ul {
     }
 
     .wrap_btn .singup {
-        padding: 2% 6%;
+        padding: 2% 4%;
         background-color: #ffffff;
     }
 
@@ -211,8 +217,12 @@ nav.menu ul {
 }
 
 @media (max-width: 980px) {
-    .mobile_navbar {
+    /* .mobile_navbar {
         display: block;
+    } */
+
+    .menu {
+        display: none; /* Hide menu initially */
     }
 
     .menu ul {
@@ -223,7 +233,7 @@ nav.menu ul {
         position: absolute;
         width: 100%;
         left: 0;
-        top: 94px;
+        top: 80px;
         /* display: none; */
     }
 
@@ -239,16 +249,21 @@ nav.menu ul {
         border-bottom: 1px solid;
         width: 100%;
     }
+    .wrap_btn{
+        display: flex;
+    justify-content: end;
+    margin-right: 40px;
+    }
 
     .navigation {
-        padding: 24px 0px 109px 0px;
+        padding: 20px 0px 20px 0px;
     }
 
     span.hamburger {
         width: 25px;
         height: 25px;
         position: absolute;
-        top: 40px;
+        top: 31px;
         right: 30px;
     }
 
@@ -260,10 +275,11 @@ nav.menu ul {
     }
 }
 
+
 @media (max-width: 780px) {
     .menu ul {
         padding: 16px 0;
-        top: 84px;
+        top: 57px;
     }
 
     .menu ul li a {
@@ -271,18 +287,20 @@ nav.menu ul {
     }
 
     .navigation {
-        padding: 20px 0px 90px 0px;
+        padding: 10px 0px 10px 0px;
     }
-
+    .wrap_btn{  
+    margin-right: 45px;
+    }
     span.hamburger {
-        top: 37px;
+        top: 21px;
     }
 }
 
 @media (max-width: 480px) {
     .menu ul {
         padding: 12px 0;
-        top: 64px;
+        top: 10px;
         margin-top: 50px;
     }
 
@@ -291,9 +309,11 @@ nav.menu ul {
     }
 
     .navigation {
-        padding: 10px 0px 60px 0px;
+        padding: 15px 0px 15px 0px;
     }
-
+    .wrap_btn{
+        margin-right: 50px;
+        }
     span.hamburger {
         top: 20px;
     }
@@ -324,7 +344,7 @@ nav.menu ul {
 }
 
 .menuflex {
-    padding-top: 150px;
+    padding-top: 5%;
 }
 
 .row {
@@ -396,11 +416,6 @@ input[type="text"] {
     .row {
         justify-content: center;
     }
-
-    .menuflex {
-        padding-top: 130px;
-    }
-
     .content h1 {
         font-size: 70px;
         line-height: 100px;
@@ -416,11 +431,6 @@ input[type="text"] {
     .row {
         gap: 20px;
     }
-
-    .menuflex {
-        padding-top: 90px;
-    }
-
     .content h1 {
         font-size: 60px;
         line-height: 90px;
@@ -456,11 +466,6 @@ input[type="text"] {
     .row {
         gap: 45px;
     }
-
-    .menuflex {
-        padding-top: 90px;
-    }
-
     .content h1 {
         font-size: 55px;
         line-height: 80px;
@@ -495,10 +500,6 @@ input[type="text"] {
 @media (max-width: 980px) {
     .row {
         row-gap: 35px;
-    }
-
-    .menuflex {
-        padding-top: 190px;
     }
 
     .content h1 {
@@ -540,11 +541,6 @@ input[type="text"] {
     .row {
         row-gap: 30px;
     }
-
-    .menuflex {
-        padding-top: 190px;
-    }
-
     .content h1 {
         font-size: 45px;
         line-height: 60px;
@@ -577,10 +573,6 @@ input[type="text"] {
 
     .row {
         row-gap: 30px;
-    }
-
-    .menuflex {
-        padding-top: 190px;
     }
 
     .content h1 {
